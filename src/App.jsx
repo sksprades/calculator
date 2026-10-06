@@ -63,7 +63,7 @@ function App() {
     if (!isNaN(value)) {
       if (
         DisplayValue === '0' || 
-        DisplayValue === 'RESET' || 
+        DisplayValue === '0' || 
         DisplayValue === 'Error' || 
         waitingForNext
       ) {
@@ -133,7 +133,7 @@ function App() {
           <CalcButton buttonLabel={2} onClick={buttonClickHandler}/>
           <CalcButton buttonLabel={3} onClick={buttonClickHandler}/>
           <CalcButton buttonLabel={'-'} onClick={buttonClickHandler}/>
-          <CalcButton buttonLabel={"CLR"} onClick={buttonClickHandler}/>
+          <CalcButton buttonLabel={"C"} onClick={buttonClickHandler}/>
           <CalcButton buttonLabel={0} onClick={buttonClickHandler}/>
           <CalcButton buttonLabel={'='} onClick={buttonClickHandler}/>
           <CalcButton buttonLabel={'+'} onClick={buttonClickHandler}/>
