@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
+
+/* --- Main Styles --- */
+
+/* Main Background - Hangar / Space Tech Theme */
+.App {
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f141d;
+  background-image: 
+    radial-gradient(circle at 50% 50%, #1a2332 0%, #0f141d 100%),
+    linear-gradient(rgba(0, 210, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 210, 255, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 20px 20px, 20px 20px;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+/* Styled Header - EFSF Tactical Interface Style */
+.Header {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00d2ff;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-left: 4px solid #e61f25;
+  border-right: 4px solid #0055a5;
+  padding: 6px 16px;
+  background: rgba(15, 20, 29, 0.8);
+}
+
+/* Calculator Shell - RX-78-2 Armor Plating */
+.Calculator {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  border: 2px solid #0055a5;
+  border-top: 4px solid #e61f25;
+  background-color: #d8deee;
+  padding: 24px;
+  position: relative;
+  /* Chamfered Gundam Armor Corners */
+  clip-path: polygon(
+    0 15px, 15px 0, 
+    calc(100% - 15px) 0, 100% 15px, 
+    100% calc(100% - 15px), calc(100% - 15px) 100%, 
+    15px 100%, 0 calc(100% - 15px)
+  );
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 0 0 2px #ffffff;
+}
+
+/* Display Window - Cockpit HUD Sensor Screen */
+.Display {
+  border: 2px solid #00d2ff;
+  border-radius: 2px;
+  height: 65px;
+  font-size: 2.25rem;
+  font-weight: 900;
+  padding: 12px 16px;
+  text-align: right;
+  background-color: #05131d;
+  color: #00ff66;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  word-break: break-all;
+  letter-spacing: 2px;
+}
+
+/* Grid Layout for Keys */
+.Keypad {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Button Base - Mech Controls */
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  border: 1px solid #1a2332;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f141d;
+  background-color: #f0f3f8;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 8px, 8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+  box-shadow: inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 2px 2px 0px rgba(255, 255, 255, 0.8);
+}
+
+/* Gundam Color Accents */
+
+/* Clear / Emergency Function (Red Mech Accent) */
+.Keypad .Button:nth-child(13) {
+  background-color: #e61f25;
+  color: #ffffff;
+  border-color: #990000;
+}
+
+/* Equal / Execute Key (Yellow V-Fin Accent) */
+.Keypad .Button:nth-child(15) {
+  background-color: #e6a100;
+  color: #0f141d;
+  border-color: #b37d00;
+}
+
+/* Operator Accents */
+
+/* Division (÷) - Blue Accent */
+.Keypad .Button:nth-child(4) {
+  background-color: #0055a5;
+  color: #ffffff;
+  border-color: #003366;
+}
+
+/* Multiplication (*) - Gold/Yellow Accent */
+.Keypad .Button:nth-child(8) {
+  background-color: #a58200;
+  color: #ffffff;
+  border-color: #665000;
+}
+
+/* Subtraction (-) - Crimson Red Accent */
+.Keypad .Button:nth-child(12) {
+  background-color: #a5001b;
+  color: #ffffff;
+  border-color: #660011;
+}
+
+/* Addition (+) - Emerald Green Accent */
+.Keypad .Button:nth-child(16) {
+  background-color: #008a43;
+  color: #ffffff;
+  border-color: #005228;
+}
