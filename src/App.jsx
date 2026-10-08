@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className=' App'>
-      <div className='Header'>Calculator of Joaquin Manalastas - IT3A</div>
+      <div className='Header'>Calculator of Shawn Kent Prades - IT3A</div>
       <div className='Calculator'>
         <CalcDisplay DisplayValue={DisplayValue} backgroundColor={displayBg} />
         <div className='Keypad'>
